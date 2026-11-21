@@ -1,0 +1,5 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+D03,real_IR,"Buổi tối khó phân biệt kính râm với kính cận trên ảnh NIR",glasses,"Chọn unknown thay vì clear khi không đủ căn cứ để xác định loại kính."
+S01_rgb,IR_sim,"Child_seat khó thấy trên RGB hơn ảnh IR-sim; sau khi tăng sáng hiển thị vẫn nhận diện được",child_seat,"Sau khi tăng sáng hiển thị trong CVAT vẫn nhận diện được từ RGB nên giữ child_seat trên S01_rgb; không dùng IR để suy đoán."
+S03_rgb,IR_sim,"Không nhận diện được child_seat trên RGB nhưng thấy được trên ảnh IR-sim cùng cảnh",child_seat,"Không gán trên RGB nếu ảnh RGB riêng không đủ căn cứ; gán trên IR chỉ khi IR tự nó cho thấy rõ."
+S08_ir,IR_sim,"Khó phân biệt child_seat và infant_seat trên ảnh IR-sim",child_seat/infant_seat,"Theo tiêu chí coach đã xác nhận cho cảnh này, gán infant_seat cho ghế dạng nằm/ngả; không tự mở rộng tiêu chí này sang ảnh khác."
